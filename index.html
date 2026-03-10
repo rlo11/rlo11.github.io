@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rogelio Lopez — AI Solutions Engineer</title>
+<meta name="description" content="Rogelio Lopez — AI Solutions Engineer. Full-stack development, automation systems, and AI implementation for businesses. Mexico City.">
+<meta property="og:title" content="Rogelio Lopez — AI Solutions Engineer">
+<meta property="og:description" content="AI Solutions Engineer. Built a 93K-line AI SaaS, automated 3 service lines across 8+ platforms, and helps businesses implement AI across industries.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://rlo11.github.io">
+<meta property="og:image" content="https://rlo11.github.io/photo.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://rlo11.github.io">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ProfilePage","mainEntity":{"@type":"Person","name":"Rogelio Lopez","jobTitle":"AI Solutions Engineer","url":"https://rlo11.github.io","email":"lopez1457@me.com","image":"https://rlo11.github.io/photo.jpg","sameAs":["https://github.com/rlo11","https://www.linkedin.com/in/rogeliolopez-/"],"knowsLanguage":["en","es"],"alumniOf":{"@type":"CollegeOrUniversity","name":"Universidad Santander"},"knowsAbout":["AI","Full-Stack Development","SaaS","Workflow Automation","RAG","NLP"]}}
+</script>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%231d1d1f'/><text x='50' y='68' font-family='Georgia,serif' font-size='60' font-weight='400' fill='%23fbfbfd' text-anchor='middle'>R</text></svg>">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%231d1d1f'/><text x='50' y='68' font-family='Georgia,serif' font-size='60' font-weight='400' fill='%23fbfbfd' text-anchor='middle'>R</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300;1,9..40,400&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --ink:#1d1d1f;--ink-s:#585860;--ink-t:#6e6e73;
+  --bg:#fbfbfd;--bg-alt:#f5f5f7;--bg-dark:#1d1d1f;
+  --white:#ffffff;--accent:#4a7c96;--accent-s:rgba(74,124,150,.08);
+  --div:rgba(0,0,0,.06);--radius:20px;
+  --ff-d:'Playfair Display',Georgia,serif;
+  --ff-b:'DM Sans',-apple-system,sans-serif;
+  --max:1120px;--gutter:clamp(24px,5vw,80px);
+}
+html{scroll-behavior:smooth;font-size:16px;-webkit-font-smoothing:antialiased}
+body{font-family:var(--ff-b);color:var(--ink);background:var(--bg);line-height:1.6;overflow-x:hidden}
+::selection{background:var(--accent);color:#fff}
+img{display:block;max-width:100%}
+
+/* ── NAV ── */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:0 var(--gutter);transition:all .4s cubic-bezier(.23,1,.32,1)}
+nav.scrolled{background:rgba(251,251,253,.85);backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px);border-bottom:1px solid var(--div)}
+.nav-inner{max-width:var(--max);margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:64px}
+.wordmark{font-family:var(--ff-d);font-size:1.375rem;font-weight:600;letter-spacing:-.02em;color:var(--ink);text-decoration:none}
+.nav-links{display:flex;gap:36px;list-style:none}
+.nav-links a{font-size:.8125rem;font-weight:400;color:var(--ink-s);text-decoration:none;letter-spacing:.02em;transition:color .3s}
+.nav-links a:hover{color:var(--ink)}
+.nav-burger{display:none;background:none;border:none;cursor:pointer;padding:4px}
+.nav-burger span{display:block;width:22px;height:2px;background:var(--ink);margin:5px 0;transition:all .3s;border-radius:2px}
+.nav-burger.open span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
+.nav-burger.open span:nth-child(2){opacity:0}
+.nav-burger.open span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
+.mobile-menu{display:none;position:fixed;inset:0;top:64px;background:rgba(251,251,253,.98);backdrop-filter:blur(20px);z-index:99;padding:40px var(--gutter);flex-direction:column;gap:32px}
+.mobile-menu.open{display:flex}
+.mobile-menu a{font-size:1.5rem;font-weight:400;color:var(--ink);text-decoration:none;font-family:var(--ff-d)}
+
+/* ── HERO ── */
+.hero{min-height:100svh;display:flex;flex-direction:column;justify-content:center;padding:100px var(--gutter) 60px;max-width:var(--max);margin:0 auto}
+.hero-eyebrow{font-size:.875rem;font-weight:500;color:var(--accent);letter-spacing:.08em;text-transform:uppercase;margin-bottom:14px;opacity:0;transform:translateY(20px);animation:rUp .8s .2s cubic-bezier(.23,1,.32,1) forwards}
+.hero h1{font-family:var(--ff-d);font-size:clamp(2.8rem,6.5vw,5.5rem);font-weight:400;line-height:1.08;letter-spacing:-.025em;max-width:14ch;opacity:0;transform:translateY(30px);animation:rUp 1s .35s cubic-bezier(.23,1,.32,1) forwards}
+.hero h1 em{font-style:italic;color:var(--accent)}
+.hero-body{margin-top:28px;font-size:clamp(1.0625rem,1.5vw,1.1875rem);font-weight:300;line-height:1.65;color:var(--ink-s);max-width:520px;opacity:0;transform:translateY(25px);animation:rUp 1s .55s cubic-bezier(.23,1,.32,1) forwards}
+.hero-ctas{margin-top:36px;display:flex;gap:14px;flex-wrap:wrap;opacity:0;transform:translateY(20px);animation:rUp .8s .7s cubic-bezier(.23,1,.32,1) forwards}
+.btn{display:inline-flex;align-items:center;gap:8px;font-size:.9375rem;font-weight:400;text-decoration:none;padding:14px 28px;border-radius:100px;transition:all .35s cubic-bezier(.23,1,.32,1);font-family:var(--ff-b)}
+.btn-primary{background:var(--ink);color:var(--bg);border:1px solid var(--ink)}
+.btn-primary:hover{background:#333}
+.btn-ghost{color:var(--ink);border:1px solid var(--div);background:transparent}
+.btn-ghost:hover{border-color:var(--ink)}
+.hero-meta{margin-top:48px;display:flex;gap:40px;flex-wrap:wrap;opacity:0;transform:translateY(20px);animation:rUp .8s .85s cubic-bezier(.23,1,.32,1) forwards}
+.hero-meta dt{font-size:.6875rem;text-transform:uppercase;letter-spacing:.1em;color:var(--ink-t);margin-bottom:4px}
+.hero-meta dd{font-size:.9375rem;font-weight:400}
+
+/* ── SECTIONS ── */
+section{padding:clamp(64px,10vw,100px) var(--gutter)}
+section.alt{background:var(--bg-alt)}
+section.dark{background:var(--bg-dark);color:#fff}
+section.dark .section-label{color:rgba(255,255,255,.4)}
+section.dark .section-heading{color:#fff}
+section.dark .section-intro{color:rgba(255,255,255,.6)}
+.si{max-width:var(--max);margin:0 auto}
+.section-label{font-size:.6875rem;text-transform:uppercase;letter-spacing:.12em;color:var(--ink-t);margin-bottom:16px}
+.section-heading{font-family:var(--ff-d);font-size:clamp(2rem,4vw,3.25rem);font-weight:400;line-height:1.15;letter-spacing:-.02em;max-width:20ch;margin-bottom:20px}
+.section-intro{font-size:1.0625rem;font-weight:300;color:var(--ink-s);max-width:560px;line-height:1.65;margin-bottom:56px}
+
+/* ── ABOUT ── */
+.about-grid{display:grid;grid-template-columns:320px 1fr;gap:72px;align-items:start}
+.about-photo{aspect-ratio:4/5;border-radius:var(--radius);background:linear-gradient(145deg,#dde5ea,#c8d4dc);overflow:hidden}
+.about-photo img{width:100%;height:100%;object-fit:cover}
+.about-content h3{font-family:var(--ff-d);font-size:1.75rem;font-weight:400;line-height:1.3;margin-bottom:24px}
+.about-content p{font-size:1rem;font-weight:300;color:var(--ink-s);line-height:1.75;margin-bottom:16px}
+.about-details{margin-top:36px;display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.about-detail-label{font-size:.6875rem;text-transform:uppercase;letter-spacing:.1em;color:var(--ink-t);margin-bottom:4px}
+.about-detail-value{font-size:.9375rem}
+
+/* ── PROJECT SHOWCASE (sticky scroll) ── */
+.showcase{position:relative}
+.showcase-sticky{position:sticky;top:0;min-height:100vh;display:flex;align-items:center;padding:0 var(--gutter)}
+.showcase-inner{max-width:var(--max);margin:0 auto;width:100%;display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.showcase-text h3{font-family:var(--ff-d);font-size:clamp(2rem,3.5vw,3rem);font-weight:400;letter-spacing:-.02em;margin-bottom:16px}
+.showcase-text h3 em{font-style:italic;color:var(--accent)}
+.showcase-text p{font-size:1.0625rem;font-weight:300;color:var(--ink-s);line-height:1.7;margin-bottom:24px}
+.showcase-pills{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:32px}
+.showcase-pill{font-size:.75rem;font-weight:400;color:var(--ink-s);background:var(--bg-alt);padding:5px 14px;border-radius:6px}
+section.dark .showcase-pill{background:rgba(255,255,255,.08);color:rgba(255,255,255,.6)}
+
+/* Phone mockup */
+.phone{width:280px;margin:0 auto;background:#000;border-radius:36px;padding:12px;box-shadow:0 40px 80px rgba(0,0,0,.15);position:relative}
+.phone-screen{background:#e5ddd5;border-radius:26px;overflow:hidden;aspect-ratio:9/17;display:flex;flex-direction:column}
+.phone-header{background:#075e54;color:#fff;padding:12px 16px;display:flex;align-items:center;gap:10px;font-size:.75rem;font-weight:500}
+.phone-avatar{width:28px;height:28px;border-radius:50%;background:rgba(255,255,255,.2);display:flex;align-items:center;justify-content:center;font-size:.6rem}
+.phone-chat{flex:1;padding:12px;display:flex;flex-direction:column;gap:6px;overflow:hidden}
+.chat-msg{max-width:80%;padding:8px 12px;border-radius:10px;font-size:.7rem;line-height:1.4;opacity:0;transform:translateY(10px);transition:all .4s cubic-bezier(.23,1,.32,1)}
+.chat-msg.visible{opacity:1;transform:translateY(0)}
+.chat-in{background:#fff;align-self:flex-start;border-top-left-radius:2px}
+.chat-out{background:#dcf8c6;align-self:flex-end;border-top-right-radius:2px}
+.chat-time{font-size:.55rem;color:#999;text-align:right;margin-top:2px}
+
+/* Metrics */
+.metrics-row{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;padding-top:32px;border-top:1px solid var(--div);margin-top:8px}
+section.dark .metrics-row{border-top-color:rgba(255,255,255,.1)}
+.metric-val{font-family:var(--ff-d);font-size:2rem;font-weight:400;letter-spacing:-.02em;margin-bottom:4px}
+.metric-lbl{font-size:.8125rem;color:var(--ink-t);font-weight:300}
+section.dark .metric-lbl{color:rgba(255,255,255,.4)}
+
+/* Automation visual */
+.auto-visual{position:relative;width:100%;max-width:420px;margin:0 auto;aspect-ratio:1;display:flex;align-items:center;justify-content:center}
+.auto-node{position:absolute;width:64px;height:64px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:.65rem;font-weight:500;text-align:center;color:#fff;line-height:1.2;transition:all 1.2s cubic-bezier(.23,1,.32,1);padding:6px}
+.auto-node.n1{background:#e06c60}
+.auto-node.n2{background:#4a7c96}
+.auto-node.n3{background:#6b8e5e}
+.auto-node.n4{background:#c4883e}
+.auto-node.n5{background:#8b6fa8}
+.auto-node.n6{background:#5a8a9e}
+/* Chaotic positions */
+.auto-visual.chaos .n1{top:5%;left:8%;transform:rotate(-15deg)}
+.auto-visual.chaos .n2{top:12%;right:5%;transform:rotate(12deg)}
+.auto-visual.chaos .n3{bottom:30%;left:2%;transform:rotate(8deg)}
+.auto-visual.chaos .n4{bottom:8%;right:10%;transform:rotate(-20deg)}
+.auto-visual.chaos .n5{top:45%;left:35%;transform:rotate(5deg)}
+.auto-visual.chaos .n6{bottom:5%;left:30%;transform:rotate(-8deg)}
+/* Organized positions */
+.auto-visual.organized .n1{top:5%;left:50%;transform:translate(-50%,0) rotate(0deg)}
+.auto-visual.organized .n2{top:35%;left:15%;transform:rotate(0deg)}
+.auto-visual.organized .n3{top:35%;right:15%;transform:rotate(0deg)}
+.auto-visual.organized .n4{bottom:20%;left:15%;transform:rotate(0deg)}
+.auto-visual.organized .n5{bottom:20%;right:15%;transform:rotate(0deg)}
+.auto-visual.organized .n6{bottom:0%;left:50%;transform:translate(-50%,0) rotate(0deg)}
+/* Connection lines */
+.auto-lines{position:absolute;inset:0;pointer-events:none}
+.auto-lines line{stroke:rgba(255,255,255,.15);stroke-width:1.5;stroke-dasharray:4 4;opacity:0;transition:opacity .8s .4s}
+.auto-visual.organized .auto-lines line{opacity:1}
+.auto-label{position:absolute;bottom:-36px;left:0;right:0;text-align:center;font-size:.75rem;color:rgba(255,255,255,.4);letter-spacing:.08em;text-transform:uppercase;transition:all .6s}
+
+/* ── CLIENT CARDS ── */
+.client-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+.client-card{background:var(--white);border:1px solid var(--div);border-radius:var(--radius);overflow:hidden;transition:border-color .3s,transform .3s}
+.client-card:hover{border-color:rgba(0,0,0,.12);transform:translateY(-3px)}
+.client-header{padding:36px 36px 0;border-bottom:none}
+.client-badge{display:inline-block;font-size:.6875rem;font-weight:500;text-transform:uppercase;letter-spacing:.1em;color:var(--accent);background:var(--accent-s);padding:5px 12px;border-radius:100px;margin-bottom:16px}
+.client-header h3{font-family:var(--ff-d);font-size:1.5rem;font-weight:400;letter-spacing:-.01em;margin-bottom:6px}
+.client-subtitle{font-size:.875rem;color:var(--ink-t);font-weight:400}
+.client-body{padding:24px 36px 36px}
+.client-body>p{font-size:.9375rem;font-weight:300;color:var(--ink-s);line-height:1.7;margin-bottom:24px}
+.client-services{display:flex;flex-direction:column;gap:16px;margin-bottom:24px}
+.client-service{display:flex;gap:14px;align-items:flex-start}
+.cs-icon{width:32px;height:32px;min-width:32px;border-radius:8px;background:var(--accent-s);display:flex;align-items:center;justify-content:center;margin-top:2px}
+.client-service strong{font-size:.8125rem;font-weight:500;display:block;margin-bottom:2px}
+.client-service span{font-size:.8125rem;font-weight:300;color:var(--ink-s);line-height:1.55}
+.client-pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+.client-status{margin-top:20px;display:flex;align-items:center;gap:8px;font-size:.75rem;font-weight:500;color:var(--accent)}
+.status-dot{width:8px;height:8px;border-radius:50%;background:var(--accent);animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+@media(max-width:768px){.client-grid{grid-template-columns:1fr}}
+
+/* ── CAPABILITIES ── */
+.cap-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px}
+.cap{padding:36px;border-radius:var(--radius);border:1px solid var(--div);background:var(--white);transition:border-color .3s,transform .3s}
+.cap:hover{border-color:rgba(0,0,0,.12);transform:translateY(-2px)}
+.cap-icon{width:40px;height:40px;border-radius:10px;background:var(--accent-s);display:flex;align-items:center;justify-content:center;margin-bottom:20px}
+.cap h4{font-size:1rem;font-weight:500;margin-bottom:10px}
+.cap p{font-size:.875rem;font-weight:300;color:var(--ink-s);line-height:1.65}
+
+/* ── TECH ── */
+.tech-primary{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:40px}
+.tp-lg{font-size:.875rem;font-weight:500;color:var(--ink);background:var(--white);border:1px solid rgba(0,0,0,.1);padding:10px 22px;border-radius:100px;transition:all .3s}
+.tp-lg:hover{border-color:var(--accent);color:var(--accent)}
+.tech-more{padding-top:32px;border-top:1px solid var(--div)}
+.tech-more-inner{max-height:0;overflow:hidden;transition:max-height .5s cubic-bezier(.23,1,.32,1)}
+.tech-more-inner.open{max-height:800px}
+.tech-toggle{font-size:.8125rem;font-weight:400;color:var(--accent);background:none;border:none;cursor:pointer;padding:8px 0;display:flex;align-items:center;gap:6px}
+.tech-toggle:hover{opacity:.7}
+.tech-toggle svg{transition:transform .3s}
+.tech-toggle.open svg{transform:rotate(180deg)}
+.tc-label{font-size:.6875rem;text-transform:uppercase;letter-spacing:.1em;color:var(--ink-t);margin:20px 0 10px}
+.tc-label:first-child{margin-top:16px}
+.tc-row{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
+.tc-row:last-child{margin-bottom:0}
+.tp{font-size:.75rem;font-weight:400;color:var(--ink-s);background:var(--bg);border:1px solid var(--div);padding:6px 14px;border-radius:100px;transition:all .3s}
+.tp:hover{border-color:var(--accent);color:var(--accent)}
+
+/* ── TIMELINE ── */
+.timeline{position:relative;padding-left:40px}
+.timeline::before{content:'';position:absolute;left:7px;top:8px;bottom:8px;width:1px;background:var(--div)}
+section.alt .timeline::before{background:rgba(0,0,0,.08)}
+.tl-item{position:relative;padding-bottom:48px}
+.tl-item:last-child{padding-bottom:0}
+.tl-item::before{content:'';position:absolute;left:-33px;top:8px;width:7px;height:7px;border-radius:50%;background:var(--accent)}
+.tl-year{font-size:.75rem;color:var(--ink-t);letter-spacing:.08em;text-transform:uppercase;margin-bottom:6px}
+.tl-title{font-size:1.125rem;font-weight:500;margin-bottom:6px}
+.tl-desc{font-size:.9375rem;font-weight:300;color:var(--ink-s);line-height:1.6}
+
+/* ── CONTACT ── */
+.contact{text-align:center;padding:clamp(80px,12vw,140px) var(--gutter)}
+.contact h2{font-family:var(--ff-d);font-size:clamp(2.5rem,5.5vw,4.5rem);font-weight:400;line-height:1.1;letter-spacing:-.025em;margin-bottom:24px}
+.contact h2 em{font-style:italic;color:var(--accent)}
+.contact-body{font-size:1.0625rem;font-weight:300;color:var(--ink-s);max-width:480px;margin:0 auto 40px;line-height:1.65}
+.contact-links{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+.contact-link{display:inline-flex;align-items:center;gap:8px;font-size:.9375rem;font-weight:400;color:var(--ink);text-decoration:none;padding:14px 32px;border:1px solid var(--ink);border-radius:100px;transition:all .35s cubic-bezier(.23,1,.32,1)}
+.contact-link:hover{background:var(--ink);color:var(--bg)}
+
+/* ── FOOTER ── */
+footer{padding:40px var(--gutter);border-top:1px solid var(--div)}
+footer .fi{max-width:var(--max);margin:0 auto;display:flex;justify-content:space-between;align-items:center}
+footer p{font-size:.75rem;color:var(--ink-t)}
+
+/* ── REVEAL ── */
+.rv{opacity:0;transform:translateY(40px);transition:opacity .9s cubic-bezier(.23,1,.32,1),transform .9s cubic-bezier(.23,1,.32,1)}
+.rv.visible{opacity:1;transform:translateY(0)}
+.rv-d1{transition-delay:.1s}.rv-d2{transition-delay:.2s}.rv-d3{transition-delay:.3s}
+@keyframes rUp{to{opacity:1;transform:translateY(0)}}
+
+/* ── RESPONSIVE ── */
+@media(max-width:960px){
+  .showcase-inner{grid-template-columns:1fr;text-align:center}
+  .showcase-sticky{min-height:auto;padding:clamp(64px,10vw,100px) var(--gutter)}
+  .phone{width:240px}
+  .auto-visual{max-width:320px}
+}
+@media(max-width:768px){
+  .nav-links{display:none}
+  .nav-burger{display:block}
+  .about-grid{grid-template-columns:1fr;gap:48px}
+  .about-photo{max-width:280px}
+  .about-details{grid-template-columns:1fr}
+  .metrics-row{grid-template-columns:1fr 1fr}
+  .cap-grid{grid-template-columns:1fr}
+  .hero-meta{gap:24px}
+  .showcase-inner{gap:40px}
+}
+@media(max-width:480px){
+  .metrics-row{grid-template-columns:1fr}
+  .phone{width:200px}
+  .auto-visual{max-width:260px}
+  .auto-node{width:46px;height:46px;font-size:.5rem;border-radius:8px;padding:4px}
+}
+
+/* ── GRAIN ── */
+body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:9999;opacity:.018;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");background-repeat:repeat;background-size:200px}
+
+/* ── #1 REDUCED MOTION ── */
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
+  .rv{opacity:1;transform:none}
+  .hero-eyebrow,.hero h1,.hero-body,.hero-ctas,.hero-meta{opacity:1;transform:none;animation:none}
+  .chat-msg{opacity:1;transform:none}
+}
+
+/* ── #2 FOCUS STYLES ── */
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+
+/* ── #6 SKIP LINK ── */
+.skip-link{position:absolute;top:-100%;left:16px;background:var(--ink);color:var(--bg);padding:12px 24px;border-radius:0 0 8px 8px;font-size:.875rem;font-weight:500;z-index:1000;transition:top .2s}
+.skip-link:focus{top:0}
+
+/* ── DARK MODE (class-based) ── */
+html.dark{
+  --ink:#f5f5f7;--ink-s:#a1a1a6;--ink-t:#86868b;
+  --bg:#1d1d1f;--bg-alt:#2d2d2f;--bg-dark:#111;
+  --white:#2d2d2f;--accent:#6ba3bf;--accent-s:rgba(107,163,191,.12);
+  --div:rgba(255,255,255,.08);
+}
+html.dark body::after{opacity:.03}
+html.dark .phone{box-shadow:0 40px 80px rgba(0,0,0,.4)}
+html.dark nav.scrolled{background:rgba(29,29,31,.85)}
+html.dark .chat-in{background:#3a3a3c;color:#f5f5f7}
+html.dark .chat-out{background:#1a4a2e;color:#f5f5f7}
+html.dark .chat-time{color:#666}
+html.dark .phone-chat{background:#1c1c1e}
+html.dark .about-photo{background:linear-gradient(145deg,#3a3a3c,#2d2d2f)}
+html.dark img{filter:brightness(.92) contrast(1.05)}
+html.dark .client-card:hover{border-color:rgba(255,255,255,.15)}
+html.dark .cap:hover{border-color:rgba(255,255,255,.15)}
+html.dark .tp-lg{background:var(--bg-alt);border-color:rgba(255,255,255,.1)}
+html.dark .contact-link{color:var(--ink);border-color:rgba(255,255,255,.2)}
+html.dark .contact-link:hover{background:var(--ink);color:var(--bg)}
+
+/* ── NAV CONTROLS ── */
+.nav-controls{display:flex;align-items:center;gap:8px}
+.nav-toggle{background:none;border:1px solid var(--div);border-radius:100px;cursor:pointer;padding:7px 12px;font-size:.75rem;font-weight:500;color:var(--ink-s);transition:all .3s;display:flex;align-items:center;gap:5px;font-family:var(--ff-b);letter-spacing:.02em}
+.nav-toggle:hover{border-color:var(--ink);color:var(--ink)}
+.nav-toggle svg{width:14px;height:14px}
+
+/* ── #14 PRINT STYLES ── */
+@media print{
+  nav,.nav-burger,.mobile-menu,.hero-ctas,.contact-links,.tech-more,.phone,.auto-visual,body::after,.skip-link{display:none!important}
+  *{color:#000!important;background:transparent!important;box-shadow:none!important}
+  body{font-size:11pt;line-height:1.5}
+  section{padding:20px 0!important;page-break-inside:avoid}
+  .showcase-sticky{position:static!important;min-height:auto!important}
+  .showcase-inner{grid-template-columns:1fr!important}
+  a[href]::after{content:" (" attr(href) ")";font-size:.8em;color:#555}
+  .rv{opacity:1!important;transform:none!important}
+}
+</style>
+</head>
+<body>
+
+<!-- #6 SKIP LINK -->
+<a href="#about" class="skip-link">Skip to content</a>
+
+<!-- NAV -->
+<nav id="nav">
+  <div class="nav-inner">
+    <a href="#" class="wordmark">Rogelio Lopez</a>
+    <ul class="nav-links">
+      <li><a href="#about" data-i18n data-es="Acerca">About</a></li>
+      <li><a href="#work" data-i18n data-es="Trabajo">Work</a></li>
+      <li><a href="#capabilities" data-i18n data-es="Capacidades">Capabilities</a></li>
+      <li><a href="#contact" data-i18n data-es="Contacto">Contact</a></li>
+    </ul>
+    <div class="nav-controls">
+      <button class="nav-toggle" id="langToggle" aria-label="Switch language">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="8" cy="8" r="6.5"/><path d="M1.5 8h13M8 1.5c-2 2.5-2 10.5 0 13M8 1.5c2 2.5 2 10.5 0 13"/></svg>
+        ES
+      </button>
+      <button class="nav-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <svg id="iconSun" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="8" cy="8" r="3"/><path d="M8 1v2M8 13v2M1 8h2M13 8h2M3.05 3.05l1.41 1.41M11.54 11.54l1.41 1.41M3.05 12.95l1.41-1.41M11.54 4.46l1.41-1.41"/></svg>
+        <svg id="iconMoon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" style="display:none"><path d="M13.5 8.5a5.5 5.5 0 01-6-6 5.5 5.5 0 106 6z"/></svg>
+      </button>
+    </div>
+    <button class="nav-burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="mobileMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu" role="navigation" aria-label="Mobile menu" aria-hidden="true">
+  <a href="#about" data-i18n data-es="Acerca">About</a>
+  <a href="#work" data-i18n data-es="Trabajo">Work</a>
+  <a href="#capabilities" data-i18n data-es="Capacidades">Capabilities</a>
+  <a href="#contact" data-i18n data-es="Contacto">Contact</a>
+</div>
+
+<!-- HERO -->
+<header class="hero">
+  <p class="hero-eyebrow" data-i18n data-es="Ingeniero de Soluciones IA">AI Solutions Engineer</p>
+  <h1 data-i18n data-es="Construyo sistemas que <em>hacen funcionar negocios</em>">I build systems that <em>make businesses run</em></h1>
+  <p class="hero-body" data-i18n data-es="Combino desarrollo full-stack, automatizaci&oacute;n de flujos y IA para resolver problemas reales de negocio. Desde plataformas SaaS y portales de clientes hasta chatbots RAG y sistemas multicanal &mdash; dise&ntilde;o, construyo y entrego.">I combine full-stack development, workflow automation, and AI to solve real business problems. From SaaS platforms and client portals to RAG chatbots and multichannel systems &mdash; I design, build, and ship.</p>
+  <div class="hero-ctas">
+    <a href="#work" class="btn btn-primary" data-i18n data-es="Ver Mi Trabajo">See My Work</a>
+    <a href="#contact" class="btn btn-ghost" data-i18n data-es="Contacto">Get in Touch</a>
+  </div>
+  <dl class="hero-meta">
+    <div><dt data-i18n data-es="Ubicaci&oacute;n">Location</dt><dd data-i18n data-es="Ciudad de M&eacute;xico">Mexico City</dd></div>
+    <div><dt data-i18n data-es="Experiencia">Background</dt><dd>AI &middot; Full-Stack &middot; Automation</dd></div>
+    <div><dt data-i18n data-es="Idiomas">Languages</dt><dd data-i18n data-es="Ingl&eacute;s &middot; Espa&ntilde;ol">English &middot; Spanish</dd></div>
+    <div><dt data-i18n data-es="Enfoque">Focus</dt><dd data-i18n data-es="Producto &middot; Automatizaci&oacute;n &middot; IA">Product &middot; Automation &middot; AI</dd></div>
+  </dl>
+</header>
+
+<!-- ABOUT -->
+<section id="about" class="alt">
+  <div class="si">
+    <div class="about-grid rv">
+      <div class="about-photo">
+        <img src="photo.jpg" alt="Rogelio Lopez" loading="lazy">
+      </div>
+      <div class="about-content">
+        <h3 data-i18n data-es="Resolviendo problemas reales con software, en toda Norteam&eacute;rica.">Solving real problems with software, across North America.</h3>
+        <p data-i18n data-es="Soy Ingeniero de Soluciones IA con base en Ciudad de M&eacute;xico. Tengo una Licenciatura en Inform&aacute;tica de la Universidad Santander (2020&ndash;2023), certificaciones en ingenier&iacute;a de IA, desarrollo full-stack y Python &mdash; y he dedicado mi carrera a la intersecci&oacute;n entre tecnolog&iacute;a y operaciones de negocio.">I'm an AI Solutions Engineer based in Mexico City. I hold a Licenciatura en Inform&aacute;tica (Bachelor's in Information Technology) from Universidad Santander (2020&ndash;2023), along with certifications in AI engineering, full-stack development, and Python &mdash; and I&rsquo;ve spent my career at the intersection of technology and business operations.</p>
+        <p data-i18n data-es="En el &uacute;ltimo a&ntilde;o, constru&iacute; en solitario una plataforma SaaS de 93,000 l&iacute;neas con IA para el mercado restaurantero mexicano, dise&ntilde;&eacute; la infraestructura completa de automatizaci&oacute;n para una empresa de servicios de alojamiento en Vancouver, y ayudo a negocios de diversas industrias a implementar IA &mdash; desde chatbots RAG y marketing automatizado hasta plataformas completas de administraci&oacute;n de propiedades.">Over the past year, I solo-built a 93,000-line AI-powered SaaS platform for the Mexican restaurant market, designed the complete automation infrastructure for a Vancouver-based accommodation services company, and help businesses across industries implement AI &mdash; from RAG chatbots and automated marketing to full property management platforms.</p>
+        <p data-i18n data-es="Pienso en sistemas. Empiezo con el problema de negocio, dise&ntilde;o la arquitectura, construyo la soluci&oacute;n y mido el impacto. Ya sea una distribuidora de belleza que necesita mejor servicio al cliente o un desarrollador inmobiliario que necesita un SaaS completo &mdash; yo entrego.">I think in systems. I start with the business problem, design the architecture, build the solution, and measure the impact. Whether it&rsquo;s a beauty distributor needing smarter customer service or a real estate developer needing a full SaaS &mdash; I deliver.</p>
+        <div class="about-details">
+          <div><p class="about-detail-label" data-i18n data-es="Educaci&oacute;n">Education</p><p class="about-detail-value" data-i18n data-es="Lic. en Inform&aacute;tica &mdash; Universidad Santander + Certificaciones en IA, Web Dev y Python">B.S. Information Technology &mdash; Universidad Santander + AI Engineer, Web Dev &amp; Python certifications</p></div>
+          <div><p class="about-detail-label" data-i18n data-es="Ubicaci&oacute;n">Based In</p><p class="about-detail-value" data-i18n data-es="Ciudad de M&eacute;xico">Mexico City</p></div>
+          <div><p class="about-detail-label" data-i18n data-es="Biling&uuml;e">Bilingual</p><p class="about-detail-value" data-i18n data-es="Ingl&eacute;s y Espa&ntilde;ol (nativos)">English &amp; Spanish (native)</p></div>
+          <div><p class="about-detail-label" data-i18n data-es="Enfoque">Approach</p><p class="about-detail-value" data-i18n data-es="Mentalidad de producto, pensamiento sist&eacute;mico">Product-minded, systems thinker</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WORK: ROBOFOOD (with phone mockup) -->
+<section id="work">
+  <div class="si">
+    <p class="section-label rv" data-i18n data-es="Trabajo Selecto">Selected Work</p>
+    <h2 class="section-heading rv" data-i18n data-es="Cosas que constru&iacute; y que hicieron una diferencia real.">Things I&rsquo;ve built that made a real difference.</h2>
+  </div>
+</section>
+
+<section class="showcase" style="padding:0">
+  <div class="showcase-sticky">
+    <div class="showcase-inner">
+      <div class="showcase-text rv">
+        <h3><em>RoboFood</em></h3>
+        <p data-i18n data-es="Una plataforma SaaS multi-tenant en producci&oacute;n que permite a restaurantes mexicanos automatizar pedidos completamente por WhatsApp usando IA. Construida en solitario desde cero &mdash; 93,000+ l&iacute;neas de c&oacute;digo.">A production multi-tenant SaaS platform that lets Mexican restaurants automate ordering entirely through WhatsApp using AI. Solo-built from scratch &mdash; 93,000+ lines of code.</p>
+        <p data-i18n data-es="Dise&ntilde;ada para due&ntilde;os de restaurantes sin conocimientos t&eacute;cnicos. El onboarding sucede dentro de WhatsApp &mdash; sin navegador, sin app. Un motor dual de IA (Gemini + LLaMA) maneja los pedidos a $0/mes.">Designed for restaurant owners with zero tech skills. Onboarding happens inside WhatsApp &mdash; no browser, no app. A dual AI engine (Gemini + LLaMA) handles orders at $0/month.</p>
+        <div class="showcase-pills">
+          <span class="showcase-pill">Node.js / Express</span>
+          <span class="showcase-pill">Next.js 15 / React 19</span>
+          <span class="showcase-pill">Gemini + LLaMA</span>
+          <span class="showcase-pill">WhatsApp API</span>
+          <span class="showcase-pill">Docker</span>
+          <span class="showcase-pill">OCR Pipeline</span>
+        </div>
+        <div class="metrics-row" id="metricsRobo">
+          <div><p class="metric-val" data-target="93" data-suffix="K+">0</p><p class="metric-lbl" data-i18n data-es="L&iacute;neas de c&oacute;digo">Lines of code</p></div>
+          <div><p class="metric-val" data-target="92">0</p><p class="metric-lbl" data-i18n data-es="Servicios backend">Backend services</p></div>
+          <div><p class="metric-val" data-target="8">0</p><p class="metric-lbl" data-i18n data-es="Subsistemas NLP">NLP subsystems</p></div>
+          <div><p class="metric-val" data-target="0" data-prefix="$" data-suffix="/mo">0</p><p class="metric-lbl" data-i18n data-es="Costo operativo IA">AI operating cost</p></div>
+          <div><p class="metric-val">&lt;15 min</p><p class="metric-lbl" data-i18n data-es="Tiempo de onboarding">Onboarding time</p></div>
+          <div><p class="metric-val" data-target="4">0</p><p class="metric-lbl" data-i18n data-es="Procesadores de pago">Payment processors</p></div>
+        </div>
+      </div>
+      <div class="rv rv-d2">
+        <div class="phone" id="phoneDemo">
+          <div class="phone-screen">
+            <div class="phone-header">
+              <div class="phone-avatar">RF</div>
+              <div><div style="font-weight:600">RoboFood Bot</div><div style="font-size:.6rem;opacity:.7">en l&iacute;nea</div></div>
+            </div>
+            <div class="phone-chat" id="chatWindow">
+              <div class="chat-msg chat-in" data-delay="0">Hola, quiero ordenar</div>
+              <div class="chat-msg chat-out" data-delay="400">&iexcl;Hola! Bienvenido a Tacos Do&ntilde;a Mar&iacute;a. &iquest;Qu&eacute; te puedo ofrecer hoy?</div>
+              <div class="chat-msg chat-in" data-delay="900">3 tacos de pastor y una coca</div>
+              <div class="chat-msg chat-out" data-delay="1400">Tu pedido:<br>🌮 3x Taco de Pastor &mdash; $45<br>🥤 1x Coca-Cola &mdash; $20<br><br>💰 Total: $65<br><br>&iquest;Deseas agregar algo m&aacute;s?</div>
+              <div class="chat-msg chat-in" data-delay="2000">No, as&iacute; est&aacute; bien</div>
+              <div class="chat-msg chat-out" data-delay="2500">&iexcl;Perfecto! Pedido confirmado ✅<br>Estar&aacute; listo en ~15 min.<br>Gracias por tu compra 🙏</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WORK: VANMATES (with automation visual) -->
+<section class="showcase dark" style="padding:0">
+  <div class="showcase-sticky">
+    <div class="showcase-inner">
+      <div class="showcase-text rv">
+        <h3><em>Vanmates</em></h3>
+        <p data-i18n data-es="Infraestructura completa de automatizaci&oacute;n para una empresa de servicios de alojamiento en Vancouver. Constru&iacute; un portal de clientes donde rastrean su progreso de servicio, suben documentos y administran su cuenta &mdash; todo sincronizado con el CRM en tiempo real.">Complete automation infrastructure for a Vancouver-based accommodation services company. Built a client portal where customers track their service progress, upload documents, and manage their account &mdash; all synced to the CRM in real time.</p>
+        <p data-i18n data-es="Dise&ntilde;&eacute; e implement&eacute; 15+ flujos de automatizaci&oacute;n n8n conectando HubSpot, WordPress, QuickBooks, Asana y PandaDoc. Tres l&iacute;neas de servicio completamente automatizadas con 8+ integraciones de plataformas.">Designed and deployed 15+ n8n automation workflows connecting HubSpot, WordPress, QuickBooks, Asana, and PandaDoc. Three service lines fully automated with 8+ platform integrations.</p>
+        <div class="showcase-pills">
+          <span class="showcase-pill">HubSpot CRM</span>
+          <span class="showcase-pill">n8n Workflows</span>
+          <span class="showcase-pill">WordPress / PHP</span>
+          <span class="showcase-pill">QuickBooks</span>
+          <span class="showcase-pill">Asana</span>
+          <span class="showcase-pill">REST APIs</span>
+        </div>
+        <div class="metrics-row" id="metricsVan">
+          <div><p class="metric-val" data-target="4">0</p><p class="metric-lbl" data-i18n data-es="Portales de cliente">Client portals</p></div>
+          <div><p class="metric-val" data-target="15" data-suffix="+">0</p><p class="metric-lbl" data-i18n data-es="Flujos automatizados">Automation workflows</p></div>
+          <div><p class="metric-val" data-target="8" data-suffix="+">0</p><p class="metric-lbl" data-i18n data-es="Plataformas integradas">Platforms integrated</p></div>
+          <div><p class="metric-val" data-target="70" data-suffix=" hrs">0</p><p class="metric-lbl" data-i18n data-es="Horas mensuales ahorradas">Monthly time saved</p></div>
+          <div><p class="metric-val" data-target="3">0</p><p class="metric-lbl" data-i18n data-es="L&iacute;neas de servicio">Service lines</p></div>
+          <div><p class="metric-val" data-prefix="$" data-target="0">0</p><p class="metric-lbl" data-i18n data-es="Costo adicional">Additional cost</p></div>
+        </div>
+      </div>
+      <div class="rv rv-d2">
+        <div class="auto-visual chaos" id="autoVisual">
+          <svg class="auto-lines" viewBox="0 0 420 420">
+            <line x1="210" y1="55" x2="95" y2="175"/>
+            <line x1="210" y1="55" x2="325" y2="175"/>
+            <line x1="95" y1="175" x2="95" y2="290"/>
+            <line x1="325" y1="175" x2="325" y2="290"/>
+            <line x1="95" y1="290" x2="210" y2="380"/>
+            <line x1="325" y1="290" x2="210" y2="380"/>
+          </svg>
+          <div class="auto-node n1">HubSpot</div>
+          <div class="auto-node n2">WordPress</div>
+          <div class="auto-node n3">QuickBooks</div>
+          <div class="auto-node n4">Asana</div>
+          <div class="auto-node n5">PandaDoc</div>
+          <div class="auto-node n6">n8n</div>
+          <div class="auto-label" id="autoLabel" data-i18n data-es="Antes: Caos manual" data-es-after="Despu&eacute;s: Automatizado y conectado">Before: Manual chaos</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WORK: AI SOLUTIONS -->
+<section class="alt">
+  <div class="si">
+    <p class="section-label rv" data-i18n data-es="Soluciones IA">AI Solutions</p>
+    <h2 class="section-heading rv" data-i18n data-es="Ayudando a negocios a desbloquear la IA &mdash; un sistema a la vez.">Helping businesses unlock AI &mdash; one system at a time.</h2>
+    <p class="section-intro rv" data-i18n data-es="M&aacute;s all&aacute; de mis propios productos, trabajo directamente con empresas para implementar servicio al cliente con IA, automatizaci&oacute;n de marketing, SEO y sistemas operativos.">Beyond my own products, I work directly with businesses to implement AI-powered customer service, marketing automation, SEO, and operational systems.</p>
+    <div class="client-grid">
+      <!-- ZERMAT CUERNAVACA -->
+      <div class="client-card rv rv-d1">
+        <div class="client-header">
+          <div class="client-badge" data-i18n data-es="Belleza y Bienestar">Beauty &amp; Wellness</div>
+          <h3>Zermat Cuernavaca</h3>
+          <p class="client-subtitle" data-i18n data-es="Ventas y Atenci&oacute;n al Cliente con IA">AI-Powered Sales &amp; Customer Engagement</p>
+        </div>
+        <div class="client-body">
+          <p data-i18n data-es="Ayud&eacute; a una distribuidora de productos de belleza Zermat en Cuernavaca a transformar su servicio al cliente y ventas con IA. Constru&iacute; un chatbot RAG entrenado con su cat&aacute;logo completo que maneja consultas, recomienda productos y captura leads 24/7.">Helped a Zermat beauty products distributor in Cuernavaca transform their customer service and sales operation with AI. Built a RAG-powered chatbot trained on their full product catalog that handles inquiries, recommends products, and captures leads 24/7.</p>
+          <div class="client-services">
+            <div class="client-service">
+              <div class="cs-icon"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 1v14M1 8h14" stroke="#4a7c96" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+              <div><strong data-i18n data-es="Chatbot RAG">RAG Chatbot</strong><br><span data-i18n data-es="Asistente IA entrenado con productos para WhatsApp y web &mdash; responde preguntas del cat&aacute;logo, maneja objeciones, recomienda seg&uacute;n tipo de piel y necesidades">Product-trained AI assistant for WhatsApp &amp; web &mdash; answers catalog questions, handles objections, recommends based on skin type and needs</span></div>
+            </div>
+            <div class="client-service">
+              <div class="cs-icon"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 4h12M2 8h12M2 12h8" stroke="#4a7c96" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+              <div><strong data-i18n data-es="Campa&ntilde;as de Marketing IA">AI Marketing Campaigns</strong><br><span data-i18n data-es="Generaci&oacute;n automatizada de campa&ntilde;as &mdash; secuencias de email, broadcasts de WhatsApp y contenido promocional personalizado por segmento de clientes">Automated campaign generation &mdash; AI-crafted email sequences, WhatsApp broadcasts, and promotional content tailored to customer segments</span></div>
+            </div>
+            <div class="client-service">
+              <div class="cs-icon"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="6" stroke="#4a7c96" stroke-width="1.5"/><path d="M8 5v3l2 2" stroke="#4a7c96" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+              <div><strong data-i18n data-es="SEO y Estrategia de Contenido">SEO &amp; Content Strategy</strong><br><span data-i18n data-es="Auditor&iacute;a SEO asistida por IA y optimizaci&oacute;n de contenido &mdash; investigaci&oacute;n de keywords, optimizaci&oacute;n de meta tags, estrategia de contenido para visibilidad org&aacute;nica">AI-assisted SEO audit and content optimization &mdash; keyword research, meta optimization, AI-generated blog content strategy for organic visibility</span></div>
+            </div>
+            <div class="client-service">
+              <div class="cs-icon"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 13l4-5 3 3 5-7" stroke="#4a7c96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+              <div><strong data-i18n data-es="Captura de Leads y CRM">Lead Capture &amp; CRM</strong><br><span data-i18n data-es="Pipeline automatizado de leads &mdash; conversaciones del chatbot alimentan el CRM con scoring, recordatorios de seguimiento y tracking de conversi&oacute;n">Automated lead pipeline &mdash; chatbot conversations funnel into CRM with scoring, follow-up reminders, and conversion tracking</span></div>
+            </div>
+          </div>
+          <div class="client-pills">
+            <span class="showcase-pill">RAG / LLM</span>
+            <span class="showcase-pill">WhatsApp AI</span>
+            <span class="showcase-pill">Email Automation</span>
+            <span class="showcase-pill">SEO</span>
+            <span class="showcase-pill">CRM Integration</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ALUX33 -->
+      <div class="client-card rv rv-d2">
+        <div class="client-header">
+          <div class="client-badge" data-i18n data-es="Tecnolog&iacute;a Inmobiliaria">Real Estate Tech</div>
+          <h3>Alux33</h3>
+          <p class="client-subtitle" data-i18n data-es="SaaS de Administraci&oacute;n de Propiedades y Hub de Renta Multicanal">Property Management SaaS &amp; Multichannel Rental Hub</p>
+        </div>
+        <div class="client-body">
+          <p data-i18n data-es="Actualmente construyendo un SaaS completo de administraci&oacute;n de propiedades para <a href='https://alux33.com' target='_blank' rel='noopener' style='color:var(--accent);text-decoration:underline'>Alux33</a>, una empresa de desarrollo inmobiliario. La plataforma da a los propietarios control total sobre sus propiedades, con un servicio opcional de gesti&oacute;n de rentas a trav&eacute;s de un hub de comunicaci&oacute;n multicanal.">Currently building a full property management SaaS for <a href="https://alux33.com" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:underline">Alux33</a>, a real estate development company. The platform gives owners complete admin control over their properties, with an opt-in rental management service powered by a multichannel communication hub.</p>
+          <div class="client-services">
+            <div class="client-service">
+              <div class="cs-icon"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="2" y="2" width="12" height="12" rx="2" stroke="#4a7c96" stroke-width="1.5"/><path d="M2 6h12M6 6v8" stroke="#4a7c96" stroke-width="1.5"/></svg></div>
+              <div><strong data-i18n data-es="Dashboard de Administraci&oacute;n">Property Admin Dashboard</strong><br><span data-i18n data-es="Plataforma SaaS completa para propietarios &mdash; gesti&oacute;n de unidades, finanzas, solicitudes de mantenimiento, almacenamiento de documentos y tracking de ocupaci&oacute;n">Full SaaS platform for property owners &mdash; unit management, financials, maintenance requests, document storage, and occupancy tracking</span></div>
+            </div>
+            <div class="client-service">
+              <div class="cs-icon"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 1L2 5v6l6 4 6-4V5L8 1z" stroke="#4a7c96" stroke-width="1.5" stroke-linejoin="round"/></svg></div>
+              <div><strong data-i18n data-es="Hub de Renta Multicanal">Multichannel Rental Hub</strong><br><span data-i18n data-es="Los propietarios optan por dejarnos gestionar rentas &mdash; IA maneja consultas de Airbnb, Booking.com, WhatsApp y canales directos a trav&eacute;s de una bandeja unificada">Owners opt in to let us manage rentals &mdash; AI handles inquiries from Airbnb, Booking.com, WhatsApp, and direct channels through a unified inbox</span></div>
+            </div>
+            <div class="client-service">
+              <div class="cs-icon"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 8h8M8 4v8" stroke="#4a7c96" stroke-width="1.5" stroke-linecap="round"/><circle cx="8" cy="8" r="6" stroke="#4a7c96" stroke-width="1.5"/></svg></div>
+              <div><strong data-i18n data-es="Comunicaci&oacute;n con Hu&eacute;spedes asistida por IA">AI-Assisted Guest Communication</strong><br><span data-i18n data-es="Respuestas automatizadas, confirmaciones de reserva, instrucciones de check-in y gesti&oacute;n de rese&ntilde;as &mdash; todo con IA y escalamiento humano">Automated responses, booking confirmations, check-in instructions, and review management &mdash; all AI-powered with human escalation</span></div>
+            </div>
+            <div class="client-service">
+              <div class="cs-icon"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 12V6a2 2 0 012-2h8a2 2 0 012 2v6M1 12h14" stroke="#4a7c96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+              <div><strong data-i18n data-es="Portal de Ingresos del Propietario">Owner Revenue Portal</strong><br><span data-i18n data-es="Dashboard transparente de ingresos &mdash; ingresos por renta, tasas de ocupaci&oacute;n, desglose de gastos y tracking de pagos por unidad">Transparent earnings dashboard &mdash; rental income, occupancy rates, expense breakdown, and payout tracking per property unit</span></div>
+            </div>
+          </div>
+          <div class="client-pills">
+            <span class="showcase-pill">SaaS Platform</span>
+            <span class="showcase-pill">Property Management</span>
+            <span class="showcase-pill">Multichannel AI</span>
+            <span class="showcase-pill">Airbnb / Booking.com</span>
+            <span class="showcase-pill">Revenue Analytics</span>
+          </div>
+          <div class="client-status"><span class="status-dot"></span> <span data-i18n data-es="En desarrollo activo">In active development</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CAPABILITIES -->
+<section id="capabilities" class="alt">
+  <div class="si">
+    <p class="section-label rv" data-i18n data-es="Lo Que Hago">What I Do</p>
+    <h2 class="section-heading rv" data-i18n data-es="De la idea al producto entregado, de principio a fin.">From idea to shipped product, end to end.</h2>
+    <p class="section-intro rv" data-i18n data-es="Trabajo en todo el espectro &mdash; pensamiento de producto, dise&ntilde;o de sistemas, implementaci&oacute;n y despliegue.">I work across the full spectrum &mdash; product thinking, system design, implementation, and deployment.</p>
+    <div class="cap-grid">
+      <div class="cap rv rv-d1">
+        <div class="cap-icon"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 2L2 7l8 5 8-5-8-5zM2 13l8 5 8-5M2 10l8 5 8-5" stroke="#4a7c96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h4 data-i18n data-es="Desarrollo Full-Stack">Full-Stack Development</h4>
+        <p data-i18n data-es="Node.js, Express, React, Next.js, PHP, WordPress. APIs backend, dashboards frontend, plugins personalizados y todo lo dem&aacute;s.">Node.js, Express, React, Next.js, PHP, WordPress. Backend APIs, frontend dashboards, custom plugins, and everything in between.</p>
+      </div>
+      <div class="cap rv rv-d2">
+        <div class="cap-icon"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="3" stroke="#4a7c96" stroke-width="1.5"/><path d="M10 2v3M10 15v3M2 10h3M15 10h3M4.22 4.22l2.12 2.12M13.66 13.66l2.12 2.12M4.22 15.78l2.12-2.12M13.66 6.34l2.12-2.12" stroke="#4a7c96" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+        <h4 data-i18n data-es="Integraci&oacute;n de IA y LLMs">AI &amp; LLM Integration</h4>
+        <p data-i18n data-es="Orquestaci&oacute;n de modelos duales, prompt engineering, pipelines NLP, sistemas OCR, optimizaci&oacute;n de costos. IA en producci&oacute;n a $0/mes.">Dual-model orchestration, prompt engineering, NLP pipelines, OCR systems, cost optimization. Production AI at $0/month.</p>
+      </div>
+      <div class="cap rv rv-d3">
+        <div class="cap-icon"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M3 3h4v4H3zM13 3h4v4h-4zM3 13h4v4H3zM13 13h4v4h-4zM7 5h6M7 15h6M5 7v6M15 7v6" stroke="#4a7c96" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+        <h4 data-i18n data-es="Automatizaci&oacute;n de Flujos">Workflow Automation</h4>
+        <p data-i18n data-es="n8n, Zapier, cadenas de webhooks personalizadas. Sincronizaci&oacute;n bidireccional de CRM, procesamiento de documentos, automatizaci&oacute;n de facturas y ramificaci&oacute;n inteligente.">n8n, Zapier, custom webhook chains. Bidirectional CRM sync, document processing, invoice automation, and intelligent branching.</p>
+      </div>
+      <div class="cap rv rv-d1">
+        <div class="cap-icon"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="2" y="4" width="16" height="12" rx="2" stroke="#4a7c96" stroke-width="1.5"/><path d="M6 8h8M6 11h5" stroke="#4a7c96" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+        <h4 data-i18n data-es="Dise&ntilde;o de Portales y Aplicaciones">Portal &amp; Application Design</h4>
+        <p data-i18n data-es="Portales para clientes con m&uacute;ltiples tipos de usuario. Tracking de documentos, acceso basado en roles, dashboards en tiempo real y herramientas de autoservicio.">Client-facing portals for multiple user types. Document tracking, role-based access, real-time dashboards, and self-service tools.</p>
+      </div>
+      <div class="cap rv rv-d2">
+        <div class="cap-icon"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M2 15l4-4 3 3 4-5 5 6" stroke="#4a7c96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="16" cy="5" r="2" stroke="#4a7c96" stroke-width="1.5"/></svg></div>
+        <h4 data-i18n data-es="Integraci&oacute;n de Plataformas">Platform Integration</h4>
+        <p data-i18n data-es="HubSpot, QuickBooks, Asana, PandaDoc, WordPress y m&aacute;s. Endpoints personalizados, detecci&oacute;n de cambios y patrones de deduplicaci&oacute;n.">HubSpot, QuickBooks, Asana, PandaDoc, WordPress, and more. Custom endpoints, change detection, and deduplication patterns.</p>
+      </div>
+      <div class="cap rv rv-d3">
+        <div class="cap-icon"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 2a8 8 0 100 16 8 8 0 000-16z" stroke="#4a7c96" stroke-width="1.5"/><path d="M10 6v4l3 2" stroke="#4a7c96" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+        <h4 data-i18n data-es="Pensamiento de Producto">Product Thinking</h4>
+        <p data-i18n data-es="Empezar con el problema de negocio, no con la tecnolog&iacute;a. Investigaci&oacute;n de usuarios, dise&ntilde;o por restricciones, iteraci&oacute;n basada en m&eacute;tricas.">Start with the business problem, not the technology. User research, constraint-driven design, metrics-based iteration.</p>
+      </div>
+      <div class="cap rv rv-d1">
+        <div class="cap-icon"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M3 10c0-3.87 3.13-7 7-7s7 3.13 7 7" stroke="#4a7c96" stroke-width="1.5" stroke-linecap="round"/><path d="M7 13h6M8 16h4M10 3v2" stroke="#4a7c96" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+        <h4 data-i18n data-es="Consultor&iacute;a e Implementaci&oacute;n de IA">AI Consulting &amp; Implementation</h4>
+        <p data-i18n data-es="Chatbots RAG, campa&ntilde;as de marketing con IA, optimizaci&oacute;n SEO, sistemas de captura de leads. Ayudando a negocios a adoptar IA que realmente genera ingresos.">RAG chatbots, AI-powered marketing campaigns, SEO optimization, lead capture systems. Helping businesses adopt AI that actually drives revenue.</p>
+      </div>
+      <div class="cap rv rv-d2">
+        <div class="cap-icon"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M2 8h16M2 12h16M5 4l-3 4 3 4M15 4l3 4-3 4" stroke="#4a7c96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h4 data-i18n data-es="Sistemas Multicanal">Multichannel Systems</h4>
+        <p data-i18n data-es="Hubs de comunicaci&oacute;n unificada conectando WhatsApp, Airbnb, Booking.com, email y web. Una bandeja, enrutamiento inteligente, respuestas asistidas por IA.">Unified communication hubs connecting WhatsApp, Airbnb, Booking.com, email, and web. One inbox, intelligent routing, AI-assisted responses.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TECH -->
+<section id="tech">
+  <div class="si">
+    <p class="section-label rv" data-i18n data-es="T&eacute;cnico">Technical</p>
+    <h2 class="section-heading rv" data-i18n data-es="Herramientas y tecnolog&iacute;as.">Tools &amp; technologies.</h2>
+    <p class="section-intro rv" data-i18n data-es="El stack principal que uso &mdash; m&aacute;s todo lo dem&aacute;s con lo que he entregado c&oacute;digo en producci&oacute;n.">The core stack I reach for &mdash; plus everything else I&rsquo;ve shipped production code with.</p>
+    <div class="rv">
+      <div class="tech-primary">
+        <span class="tp-lg">JavaScript</span><span class="tp-lg">TypeScript</span><span class="tp-lg">Python</span><span class="tp-lg">Node.js</span><span class="tp-lg">React</span><span class="tp-lg">Next.js</span><span class="tp-lg">PHP</span><span class="tp-lg">n8n</span><span class="tp-lg">HubSpot CRM</span><span class="tp-lg">Docker</span><span class="tp-lg">REST APIs</span><span class="tp-lg">Google Gemini</span><span class="tp-lg">RAG / Embeddings</span>
+      </div>
+      <div class="tech-more">
+        <button class="tech-toggle" aria-expanded="false" aria-controls="techDetails" onclick="this.classList.toggle('open');this.setAttribute('aria-expanded',this.classList.contains('open'));this.nextElementSibling.classList.toggle('open')"><span data-i18n data-es="Ver todas las tecnolog&iacute;as">Show all technologies</span> <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M3 4.5l3 3 3-3" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg></button>
+        <div class="tech-more-inner" id="techDetails">
+          <p class="tc-label">Languages &amp; Frameworks</p>
+          <div class="tc-row"><span class="tp">JavaScript (ES2022+)</span><span class="tp">TypeScript</span><span class="tp">Python</span><span class="tp">PHP</span><span class="tp">Node.js</span><span class="tp">Express</span><span class="tp">React 19</span><span class="tp">Next.js 15</span><span class="tp">WordPress</span><span class="tp">HTML / CSS</span><span class="tp">Tailwind CSS</span><span class="tp">Bash / Shell</span></div>
+          <p class="tc-label">AI &amp; Machine Learning</p>
+          <div class="tc-row"><span class="tp">Google Gemini</span><span class="tp">Groq LLaMA</span><span class="tp">Claude / Anthropic API</span><span class="tp">Prompt Engineering</span><span class="tp">NLP Pipelines</span><span class="tp">Tesseract.js OCR</span><span class="tp">RAG / Vector Embeddings</span><span class="tp">Sentiment Analysis</span><span class="tp">Fuzzy Matching</span><span class="tp">AI-Assisted Development</span><span class="tp">AI Content &amp; SEO</span></div>
+          <p class="tc-label">Automation &amp; Integration</p>
+          <div class="tc-row"><span class="tp">n8n (self-hosted)</span><span class="tp">Zapier</span><span class="tp">HubSpot CRM (API v3 &amp; v4)</span><span class="tp">QuickBooks Online</span><span class="tp">Asana</span><span class="tp">PandaDoc</span><span class="tp">Zoho CRM</span><span class="tp">Airbnb API</span><span class="tp">Booking.com</span><span class="tp">Webhooks</span><span class="tp">SMTP</span><span class="tp">WhatsApp API (WAHA)</span></div>
+          <p class="tc-label">Databases &amp; Data</p>
+          <div class="tc-row"><span class="tp">SQLite</span><span class="tp">MySQL / WordPress</span><span class="tp">JSON Data Modeling</span><span class="tp">Schema Design</span><span class="tp">Google Sheets API</span></div>
+          <p class="tc-label">DevOps &amp; Infrastructure</p>
+          <div class="tc-row"><span class="tp">Docker</span><span class="tp">Docker Compose</span><span class="tp">Nginx</span><span class="tp">PM2</span><span class="tp">Linux VPS</span><span class="tp">SSH</span><span class="tp">Cloudflare</span><span class="tp">SSL / TLS</span><span class="tp">DNS Management</span><span class="tp">GitHub Actions CI/CD</span><span class="tp">Sentry APM</span><span class="tp">Git</span></div>
+          <p class="tc-label">Payments &amp; Security</p>
+          <div class="tc-row"><span class="tp">Stripe</span><span class="tp">MercadoPago</span><span class="tp">JWT Auth</span><span class="tp">bcrypt</span><span class="tp">API Key Auth</span><span class="tp">HMAC Webhooks</span><span class="tp">Security Auditing</span><span class="tp">Rate Limiting</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- JOURNEY -->
+<section class="alt">
+  <div class="si">
+    <p class="section-label rv" data-i18n data-es="Trayectoria">Journey</p>
+    <h2 class="section-heading rv" data-i18n data-es="C&oacute;mo llegu&eacute; aqu&iacute;.">How I got here.</h2>
+    <div class="timeline rv">
+      <div class="tl-item"><p class="tl-year">2019</p><p class="tl-title">Web Development Bootcamp &mdash; The App Brewery</p><p class="tl-desc" data-i18n data-es="Desarrollo web full-stack. HTML, CSS, JavaScript, Node.js, React, bases de datos y despliegue. La base que inici&oacute; todo.">Full-stack web development. HTML, CSS, JavaScript, Node.js, React, databases, and deployment. The foundation that started it all.</p></div>
+      <div class="tl-item"><p class="tl-year">2020</p><p class="tl-title">Python Developer &mdash; Zero to Mastery</p><p class="tl-desc" data-i18n data-es="Fundamentos de Python hasta temas avanzados. Scripting, automatizaci&oacute;n, web scraping y construyendo la versatilidad para resolver cualquier problema.">Python fundamentals through advanced topics. Scripting, automation, web scraping, and building the programming versatility to tackle any problem.</p></div>
+      <div class="tl-item"><p class="tl-year">2021 &ndash; 2022</p><p class="tl-title">Full-Stack Engineer &mdash; Codecademy</p><p class="tl-desc" data-i18n data-es="Desarrollo full-stack de principio a fin. Frameworks frontend, APIs backend, bases de datos, testing y despliegue &mdash; construyendo aplicaciones listas para producci&oacute;n.">End-to-end full-stack development. Frontend frameworks, backend APIs, databases, testing, and deployment &mdash; building production-ready applications from scratch.</p></div>
+      <div class="tl-item"><p class="tl-year">2020 &ndash; 2023</p><p class="tl-title">Licenciatura en Inform&aacute;tica &mdash; Universidad Santander</p><p class="tl-desc" data-i18n data-es="Licenciatura en Tecnolog&iacute;as de la Informaci&oacute;n. Bases en arquitectura de sistemas, ingenier&iacute;a de software e infraestructura de TI.">Bachelor's in Information Technology. Foundation in systems architecture, software engineering, and IT infrastructure.</p></div>
+      <div class="tl-item"><p class="tl-year">2025</p><p class="tl-title" data-i18n data-es="Ingeniero de IA &mdash; 365 Data Science">AI Engineer &mdash; 365 Data Science</p><p class="tl-desc" data-i18n data-es="Ingenier&iacute;a de IA y machine learning. Profundizaci&oacute;n en redes neuronales, NLP, LLMs y sistemas de IA en producci&oacute;n que impulsan mi trabajo actual.">AI and machine learning engineering. Deep dive into neural networks, NLP, LLMs, and production AI systems that power my current work.</p></div>
+      <div class="tl-item"><p class="tl-year">2025</p><p class="tl-title" data-i18n data-es="RoboFood &mdash; Plataforma SaaS con IA">RoboFood &mdash; AI SaaS Platform</p><p class="tl-desc" data-i18n data-es="Constru&iacute; en solitario una plataforma de 93K l&iacute;neas para automatizaci&oacute;n de pedidos de restaurantes v&iacute;a WhatsApp. Motor dual de IA, 8 subsistemas NLP, pipeline OCR, 4 procesadores de pago.">Solo-built a 93K-line production platform for restaurant order automation via WhatsApp. Dual AI engine, 8 NLP subsystems, OCR pipeline, 4 payment processors.</p></div>
+      <div class="tl-item"><p class="tl-year">2025 &ndash; 2026</p><p class="tl-title" data-i18n data-es="Vanmates &mdash; Arquitecto de Automatizaci&oacute;n">Vanmates &mdash; Automation Architect</p><p class="tl-desc" data-i18n data-es="Constru&iacute; la infraestructura completa de automatizaci&oacute;n para una empresa multi-servicio. Portal de clientes, 15+ flujos n8n, 8+ integraciones de plataformas en tres l&iacute;neas de servicio.">Built the complete automation infrastructure for a multi-service company. Client portal, 15+ n8n workflows, 8+ platform integrations across three service lines.</p></div>
+      <div class="tl-item"><p class="tl-year">2025 &ndash; <span data-i18n data-es="Presente">Present</span></p><p class="tl-title" data-i18n data-es="Soluciones IA y Consultor&iacute;a">AI Solutions &amp; Consulting</p><p class="tl-desc" data-i18n data-es="Ayudando a negocios a implementar IA en diversas industrias. Chatbots RAG y marketing IA para Zermat Cuernavaca. Construyendo un SaaS completo de administraci&oacute;n de propiedades con hub de renta multicanal para Alux33.">Helping businesses implement AI across industries. RAG chatbots and AI marketing for Zermat Cuernavaca. Building a full property management SaaS with multichannel rental hub for Alux33.</p></div>
+      <div class="tl-item"><p class="tl-year">2026</p><p class="tl-title" data-i18n data-es="Lo Que Sigue">What&rsquo;s Next</p><p class="tl-desc" data-i18n data-es="Buscando un equipo &mdash; remoto o presencial &mdash; donde pueda aportar pensamiento de producto, experiencia en automatizaci&oacute;n y habilidades en IA para construir a escala.">Looking for a team &mdash; remote or on-site &mdash; where I can bring product thinking, automation expertise, and AI skills to build at scale.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <div class="si">
+    <h2 class="rv" data-i18n data-es="Construyamos algo <em>juntos.</em>">Let&rsquo;s build something <em>together.</em></h2>
+    <p class="contact-body rv" data-i18n data-es="Estoy abierto a roles de tiempo completo, trabajo por contrato y conversaciones interesantes sobre ingenier&iacute;a de producto, automatizaci&oacute;n e IA.">I&rsquo;m open to full-time roles, contract work, and interesting conversations about product engineering, automation, and AI.</p>
+    <div class="contact-links rv">
+      <a href="mailto:lopez1457@me.com" class="contact-link"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="1" y="3" width="14" height="10" rx="2" stroke="currentColor" stroke-width="1.2"/><path d="M1 5l7 4 7-4" stroke="currentColor" stroke-width="1.2"/></svg> <span data-i18n data-es="Contacto">Get in Touch</span></a>
+      <a href="https://github.com/rlo11" class="contact-link" target="_blank" rel="noopener"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0016 8c0-4.42-3.58-8-8-8z"/></svg> GitHub</a>
+      <a href="https://www.linkedin.com/in/rogeliolopez-/" class="contact-link" target="_blank" rel="noopener"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M13.63 0H2.37C1.06 0 0 1.06 0 2.37v11.26C0 14.94 1.06 16 2.37 16h11.26C14.94 16 16 14.94 16 13.63V2.37C16 1.06 14.94 0 13.63 0zM4.75 13.63H2.37V6h2.38v7.63zM3.56 5.02c-.76 0-1.38-.62-1.38-1.38s.62-1.38 1.38-1.38 1.38.62 1.38 1.38-.62 1.38-1.38 1.38zm10.07 8.61h-2.38V9.75c0-.93-.02-2.13-1.3-2.13-1.3 0-1.5 1.01-1.5 2.06v4.57H6.07V6h2.29v1.05h.03c.32-.6 1.1-1.23 2.26-1.23 2.41 0 2.86 1.59 2.86 3.66v4.15z"/></svg> LinkedIn</a>
+    </div>
+  </div>
+</section>
+
+<footer><div class="fi"><p>&copy; 2026 Rogelio Lopez</p><p>Mexico City, MX</p></div></footer>
+
+<script>
+// NAV
+const nav=document.getElementById('nav'),burger=document.getElementById('burger'),mm=document.getElementById('mobileMenu');
+window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>40),{passive:true});
+burger.addEventListener('click',()=>{const open=!burger.classList.contains('open');burger.classList.toggle('open');mm.classList.toggle('open');burger.setAttribute('aria-expanded',open);mm.setAttribute('aria-hidden',!open)});
+mm.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{burger.classList.remove('open');mm.classList.remove('open');burger.setAttribute('aria-expanded','false');mm.setAttribute('aria-hidden','true')}));
+
+// SMOOTH SCROLL
+document.querySelectorAll('a[href^="#"]').forEach(l=>l.addEventListener('click',e=>{e.preventDefault();const t=document.querySelector(l.getAttribute('href'));if(t){const y=t.getBoundingClientRect().top+pageYOffset-80;window.scrollTo({top:y,behavior:'smooth'})}}));
+
+// REVEAL
+const obs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)}}),{threshold:.08,rootMargin:'0px 0px -30px 0px'});
+document.querySelectorAll('.rv').forEach(el=>obs.observe(el));
+
+// COUNTER ANIMATION
+function animateCounters(container){
+  container.querySelectorAll('.metric-val[data-target]').forEach(el=>{
+    const target=+el.dataset.target,prefix=el.dataset.prefix||'',suffix=el.dataset.suffix||'';
+    if(target===0){el.textContent=prefix+'0'+suffix;return}
+    let start=0;const dur=1200,startTime=performance.now();
+    function tick(now){
+      const p=Math.min((now-startTime)/dur,1);
+      const ease=1-Math.pow(1-p,3);
+      start=Math.round(ease*target);
+      el.textContent=prefix+start+suffix;
+      if(p<1)requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+  });
+}
+const counterObs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){animateCounters(e.target);counterObs.unobserve(e.target)}}),{threshold:.3});
+document.querySelectorAll('.metrics-row').forEach(el=>counterObs.observe(el));
+
+// CHAT ANIMATION
+const chatObs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){
+  const msgs=e.target.querySelectorAll('.chat-msg');
+  msgs.forEach(m=>{setTimeout(()=>m.classList.add('visible'),+m.dataset.delay)});
+  chatObs.unobserve(e.target);
+}}),{threshold:.3});
+chatObs.observe(document.getElementById('chatWindow'));
+
+// AUTOMATION VISUAL (chaos -> organized)
+const autoVis=document.getElementById('autoVisual'),autoLabel=document.getElementById('autoLabel');
+const autoObs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){
+  setTimeout(()=>{autoVis.classList.remove('chaos');autoVis.classList.add('organized');autoLabel.textContent=currentLang==='es'?'Después: Automatizado y conectado':'After: Automated & connected'},800);
+  autoObs.unobserve(e.target);
+}}),{threshold:.3});
+autoObs.observe(autoVis);
+
+// DARK MODE TOGGLE
+const themeToggle=document.getElementById('themeToggle');
+const iconSun=document.getElementById('iconSun');
+const iconMoon=document.getElementById('iconMoon');
+function setTheme(dark){
+  document.documentElement.classList.toggle('dark',dark);
+  iconSun.style.display=dark?'none':'block';
+  iconMoon.style.display=dark?'block':'none';
+  localStorage.setItem('theme',dark?'dark':'light');
+}
+themeToggle.addEventListener('click',()=>setTheme(!document.documentElement.classList.contains('dark')));
+if(localStorage.getItem('theme')==='dark')setTheme(true);
+
+// LANGUAGE TOGGLE
+// Note: All data-en/data-es values are hardcoded in the HTML by the developer (not user input),
+// so using innerHTML here is safe — there is no untrusted content.
+const langToggle=document.getElementById('langToggle');
+let currentLang='en';
+const i18nEls=document.querySelectorAll('[data-i18n]');
+i18nEls.forEach(el=>{el.dataset.en=el.innerHTML});
+function setLang(lang){
+  currentLang=lang;
+  i18nEls.forEach(el=>{el.innerHTML=el.dataset[lang]});
+  langToggle.querySelector('svg').nextSibling.textContent=lang==='en'?' ES':' EN';
+  document.documentElement.lang=lang;
+  localStorage.setItem('lang',lang);
+  const al=document.getElementById('autoLabel');
+  if(al&&autoVis.classList.contains('organized')){
+    al.innerHTML=lang==='en'?'After: Automated & connected':(al.dataset.esAfter||al.dataset.es);
+  }
+}
+langToggle.addEventListener('click',()=>setLang(currentLang==='en'?'es':'en'));
+if(localStorage.getItem('lang')==='es')setLang('es');
+</script>
+</body>
+</html>
